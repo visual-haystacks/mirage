@@ -6,9 +6,11 @@ Welcome to the official repository for our paper: [Visual Haystacks: A Vision-Ce
 
 **Authors**: [Tsung-Han Wu](https://tsunghan-wu.github.io/), [Giscard Biamby](https://scholar.google.com/citations?user=s0Fof5IAAAAJ&hl=en), [Jerome Quenum](https://people.eecs.berkeley.edu/~jquenum/), [Ritwik Gupta](https://ritwikgupta.me/), [Joseph E. Gonzalez](https://people.eecs.berkeley.edu/~jegonzal/), [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/), [David M. Chan](https://dchan.cc/) at UC Berkeley. 
 
+**Model Checkpoint**: [🤗tsunghanwu/mirage-llama3.1-8.3B](https://huggingface.co/tsunghanwu/mirage-llama3.1-8.3B)
+
 ## :rocket: Introduction
 
-This paper addresses the challenge of answering questions across tens of thousands of images. Through extensive [experiments](https://github.com/visual-haystacks/vhs_benchmark) through our Visual Haystacks (VHs) benchmark, we demonstrated that existing Large Multimodal Models (LMMs) struggle with inputs exceeding 100 images due to API limitations, context overflow, or hardware constraints on 4 A100 GPUs. These models often face issues such as visual distractions, cross-image reasoning difficulties, and positional biases. To overcome these challenges, we developed MIRAGE (8.3B), a pioneering, open-source visual-RAG baseline model based on LMMs capable of handling tens of thousands of images. MIRAGE sets a new standard in open-source performance on the Visual Haystacks (VHs) benchmark and delivers solid results on both single- and multi-image question answering tasks.
+This paper addresses the challenge of answering questions across tens of thousands of images. Through extensive [experiments](https://github.com/visual-haystacks/vhs_benchmark) through our Visual Haystacks (VHs) benchmark, we demonstrated that existing Large Multimodal Models (LMMs) struggle with inputs exceeding 100 images due to API limitations, context overflow, or hardware constraints on 4 A100 GPUs. These models often face issues such as visual distractions, cross-image reasoning difficulties, and positional biases. To overcome these challenges, we developed MIRAGE (8.3B), a pioneering, open-source visual-RAG baseline model based on LMMs capable of handling tens of thousands of images. In brief, MIRAGE integrates a compressor module that reduces image tokens by 18x, a dynamic query-aware retriever to filter irrelevant images, and a custom-trained LMM that can do multi-image reasoning. MIRAGE sets a new standard in open-source performance on the Visual Haystacks (VHs) benchmark and delivers solid results on both single- and multi-image question answering tasks.
 
 ![](assets/MIRAGE.png)
 
@@ -176,7 +178,7 @@ playground/data/
 │   ├── VG_100K
 │   └── VG_100K_2
 └── webqa
-  └── webqa_images (download from https://drive.google.com/drive/folders/1ApfD-RzvJ79b-sLeBx1OaiPNUYauZdAZ and convert them to .jpg format)
+    └── webqa_images (download from https://drive.google.com/drive/folders/1ApfD-RzvJ79b-sLeBx1OaiPNUYauZdAZ and convert them to .jpg format)
     </pre>
 </details>
 
