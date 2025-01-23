@@ -2,6 +2,8 @@
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)  [![arXiv](https://img.shields.io/badge/arXiv-2407.13766-red)](https://arxiv.org/abs/2407.13766) 
 
+***International Conference on Learning Representations (ICLR) 2025***
+
 Welcome to the official repository for our paper: [Visual Haystacks: A Vision-Centric Needle-In-A-Haystack Benchmark](https://arxiv.org/abs/2407.13766). Explore our project page [here](https://visual-haystacks.github.io/) and the benchmark toolkits [here](https://github.com/visual-haystacks/vhs_benchmark)!
 
 **Authors**: [Tsung-Han Wu](https://tsunghan-wu.github.io/), [Giscard Biamby](https://scholar.google.com/citations?user=s0Fof5IAAAAJ&hl=en), [Jerome Quenum](https://people.eecs.berkeley.edu/~jquenum/), [Ritwik Gupta](https://ritwikgupta.me/), [Joseph E. Gonzalez](https://people.eecs.berkeley.edu/~jegonzal/), [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/), [David M. Chan](https://dchan.cc/) at UC Berkeley. 
@@ -208,16 +210,17 @@ python scripts/merge_lora_weights.py \
 
 ## :pray: Acknowledgements
 
-We are grateful for the foundational code provided by [LLaVA](https://github.com/haotian-liu/LLaVA) and [LLaVA-More](https://github.com/aimagelab/LLaVA-MORE). Utilizing their resources implies agreement to their respective licenses. Our project benefits greatly from these contributions, and we acknowledge their significant impact on our work. 
+We are grateful for the foundational code provided by [LLaVA](https://github.com/haotian-liu/LLaVA) and [LLaVA-More](https://github.com/aimagelab/LLaVA-MORE). Utilizing their resources implies agreement with their respective licenses. Our project benefits greatly from these contributions, and we acknowledge their significant impact on our work. 
 
 ## :dart: Citation
 
-If you use our work or our implementation in this repo, or find them helpful, please consider giving a citation.
+If you use our work or our implementation in this repo or find them helpful, please consider giving a citation.
 ```
 @article{wu2024visual,
   title={Visual Haystacks: A Vision-Centric Needle-In-A-Haystack Benchmark},
   author={Wu, Tsung-Han and Biamby, Giscard and and Quenum, Jerome and Gupta, Ritwik and Gonzalez, Joseph E and Darrell, Trevor and Chan, David M},
-  journal={arXiv preprint arXiv:2407.13766},
-  year={2024}
+  journal={International Conference on Learning Representations},
+  year={2025},
+  url={https://arxiv.org/abs/2407.13766}
 }
 ```
